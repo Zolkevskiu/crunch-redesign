@@ -184,11 +184,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-.baner__main {
+.banner__block .baner__main {
   position: relative;
   top: 90px;
   height: 440px;
+}
+.banner__block .baner__sec {
+  display: block;
 }
 
 .news__content {

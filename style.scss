@@ -181,11 +181,14 @@ body {
 .banner__block {
     display: flex;
     justify-content: space-between;
-}
-.baner__main {
-    position: relative;
-    top: 90px;
-    height: 440px;
+    .baner__main {
+        position: relative;
+        top: 90px;
+        height: 440px;
+    }
+    .baner__sec {
+        display: block;
+    }
 }
 .news__content {
     margin-top: 80px;
@@ -199,8 +202,6 @@ body {
     hr {
         margin-top: 12px;
     }
-}
-.news__content-wrap { 
 }
 .news__content-block {
     background: #FFFFFF;
