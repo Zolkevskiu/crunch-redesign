@@ -60,7 +60,7 @@ body {
   flex: 1 0 auto;
   max-width: 1440px;
   width: 100%;
-  padding: 0 40px;
+  padding: 0 80px 0 0;
   margin: 40px auto 0 auto;
   display: flex;
   justify-content: space-between;
@@ -70,7 +70,6 @@ body {
   width: 100%;
 }
 .article__content h1 {
-  position: absolute;
   max-width: 534px;
   width: 100%;
 }
@@ -180,17 +179,22 @@ body {
   text-decoration: none;
 }
 
-.banner__block {
-  display: flex;
-  justify-content: space-between;
+.baner__title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 95px 430px;
 }
-.banner__block .baner__main {
-  position: relative;
-  top: 90px;
-  height: 440px;
+.baner__title .baner__sec {
+  grid-column-start: 2;
+  justify-self: end;
 }
-.banner__block .baner__sec {
-  display: block;
+.baner__title h1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.baner__title .baner__main {
+  grid-column-start: 1;
+  grid-row-start: 2;
 }
 
 .news__content {
