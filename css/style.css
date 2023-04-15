@@ -149,16 +149,12 @@ body {
   margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
-}
-.header__content .content__icon-img img {
-  margin-left: 14px;
-}
-.header__content .content__icon-img img:first-child {
-  margin-left: 0;
+  gap: 14px;
 }
 
 .menu {
-  width: 271px;
+  min-width: 200px;
+  width: 270px;
 }
 .menu .menu__ul {
   list-style: none;
@@ -181,7 +177,7 @@ body {
 .baner__title {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 95px 430px;
 }
 .baner__title .baner__sec {
@@ -426,4 +422,13 @@ body {
   line-height: 19px;
   color: #000000;
   text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    min-height: 580px;
+  }
+  .header .header__content .content__icon-img img {
+    gap: 12px;
+  }
 }

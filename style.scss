@@ -146,16 +146,12 @@ body {
         margin-top: 80px;
         display: flex;
         flex-wrap: wrap;
-        img {
-            margin-left: 14px;
-            &:first-child {
-                margin-left: 0;
-            }
-        }    
+        gap: 14px; 
     }
 }
 .menu {
-    width: 271px;
+    min-width: 200px;
+    width: 270px;
     .menu__ul {
         list-style: none;
     }
@@ -179,12 +175,11 @@ body {
 .baner__title {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 95px 430px; 
     .baner__sec {
         grid-column-start: 2;
         justify-self: end;
-
     }
     h1 {
         grid-column-start: 1;
@@ -430,3 +425,19 @@ body {
         }
     }
 }
+@media(max-width:1440px) {
+    .header {
+        min-height: 580px;
+        .header__content .content__icon-img img {
+            gap: 12px;
+        }
+    }
+}
+@media(max-width:1360px) {
+    // .baner__title .baner__main {
+    //     width: 550px;
+    // }
+    // .baner__title .baner__sec {
+    //     width: 170px;
+    // }
+} 
