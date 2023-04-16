@@ -156,7 +156,11 @@ body {
 .menu__icon {
     justify-self: end;
     color: #fff;
+    cursor: pointer;
     font-size: 24px !important;
+}
+.menu__icon-content {
+    display: none;
 }
 .header__title {
     font-size: 56px;
@@ -589,6 +593,10 @@ body {
 @media(max-width:900px) {
     .head__container {
         display: none;
+    }
+    .menu__icon-content {
+        display: flex;
+        justify-content: flex-end;
     }
 }
 @media(max-width:768px) {
