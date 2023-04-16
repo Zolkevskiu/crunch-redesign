@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>crunch</title>
 </head>
 <body>
@@ -22,6 +23,21 @@
                     <a href="#" class="button__cart"><img src="image/icon/cart.svg" alt="img">Shop</a>
                     <a href="#" class="button_login">Login</a>
                 </div>
+                <i class="fa fa-bars menu__icon" onclick="menu()"></i>
+                <ul class="head__list list_menu">
+                    <li class="head__li"><a href="#" class="list__href">News</a></li>
+                    <li class="head__li"><a href="#" class="list__href">Events</a></li>
+                    <li class="head__li"><a href="#" class="list__href">Startup of the day</a></li>
+                    <li class="head__li"><a href="#" class="list__href">About</a></li>
+                </ul>
+                <script>
+                    function menu() {
+                        document.querySelector(".header").classList.toggle("header-active")
+                        document.querySelector(".list_menu").classList.toggle("list__menu-active")
+                        document.querySelector(".nav").classList.toggle("nav__active")
+                        document.querySelector(".nav__content").classList.toggle("nav__content-active")
+                    }
+                </script>
             </div>
         </div>
         <div class="header__content">
