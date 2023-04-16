@@ -64,7 +64,7 @@
                 <img src="image/baner-main.png" alt="baner" class="baner__main">
                 <picture>
                     <source srcset="image/baners/baner-test_media.png" media="(max-width: 768px)">
-                    <img src="image/baners/baner-test.png" alt="baner">
+                    <img src="image/baners/baner-test.png" alt="baner" class="baner__sec">
                 </picture>
             </div>
             <div class="news__content">
@@ -149,8 +149,7 @@
                         <div class="news__block">
                             <div class="news__data-content"><h3 class="__data">15:14, March 16, 2023</h3><h3 class="__authour">Vitalii Minka</h3></div>
                             <a href="#" class="news__link">Innovation center</a>
-                            <h2 class="news__block-title">5 Problems everyone has with Localisation 
-                                – how to solved them</h2>
+                            <h2 class="news__block-title">MBRIF: Fueling Sustainable Growth in the UAE Economy</h2>
                             <p class="news__block_sub-title">
                                 The Mohammed bin Rashid Initiative for Financial Inclusion (MBRIF) is a leading financial institution 
                                 in its class, providing superior development banking services and focused on promoting sustainable growth in the UAE economy.
@@ -162,8 +161,7 @@
                         <div class="news__block">
                             <div class="news__data-content"><h3 class="__data">15:14, March 16, 2023</h3><h3 class="__authour">Vitalii Minka</h3></div>
                             <a href="#" class="news__link">Innovation center</a>
-                            <h2 class="news__block-title">5 Problems everyone has with Localisation 
-                                – how to solved them</h2>
+                            <h2 class="news__block-title">MBRIF: Fueling Sustainable Growth in the UAE Economy</h2>
                             <p class="news__block_sub-title">
                                 The Mohammed bin Rashid Initiative for Financial Inclusion (MBRIF) is a leading financial institution 
                                 in its class, providing superior development banking services and focused on promoting sustainable growth in the UAE economy.
@@ -175,8 +173,7 @@
                         <div class="news__block">
                             <div class="news__data-content"><h3 class="__data">15:14, March 16, 2023</h3><h3 class="__authour">Vitalii Minka</h3></div>
                             <a href="#" class="news__link">Innovation center</a>
-                            <h2 class="news__block-title">5 Problems everyone has with Localisation 
-                                – how to solved them</h2>
+                            <h2 class="news__block-title">MBRIF: Fueling Sustainable Growth in the UAE Economy</h2>
                             <p class="news__block_sub-title">
                                 The Mohammed bin Rashid Initiative for Financial Inclusion (MBRIF) is a leading financial institution 
                                 in its class, providing superior development banking services and focused on promoting sustainable growth in the UAE economy.
@@ -208,7 +205,7 @@
                     <li class="__item"><a href="#">Contact us</a></li>
                 </ul>
                 <ul class="__list-block">
-                    <li class="__item __item-title">About</li>
+                    <li class="__item __item-title">News</li>
                     <li class="__item"><a href="#">Dubai Startups</a></li>
                     <li class="__item"><a href="#">Events</a></li>
                     <li class="__item"><a href="#">Innovation center</a></li>
@@ -225,7 +222,57 @@
                     <li class="__item __item-title">Jobs listing</li>
                 </ul>
             </div>
+            <div class="accordion__content">
+                <button class="accordion">About<img src="image/icon/plus.svg" alt="plus"></button>
+                <div class="panel">
+                    <ul class="__list-block">
+                        <li class="__item"><a href="#">Crunchdubai</a></li>
+                        <li class="__item"><a href="#">Jobs lists</a></li>
+                        <li class="__item"><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <button class="accordion">News<img src="image/icon/plus.svg" alt="plus"></button>
+                <div class="panel">
+                    <ul class="__list-block">
+                        <li class="__item"><a href="#">Dubai Startups</a></li>
+                        <li class="__item"><a href="#">Events</a></li>
+                        <li class="__item"><a href="#">Innovation center</a></li>
+                        <li class="__item"><a href="#">News</a></li>
+                        <li class="__item"><a href="#">ProFile</a></li>
+                        <li class="__item"><a href="#">Startup of the day</a></li>
+                        <li class="__item"><a href="#">Startups</a></li>
+                        <li class="__item"><a href="#">Thoughts</a></li>
+                    </ul>
+                </div>
+
+                <button class="accordion">Shop<img src="image/icon/plus.svg" alt="plus"></button>
+                <div class="panel">
+                <p>Lorem ipsum...</p>
+                </div>
+            </div>
+            <p class="footer_crunch">©crunchDUBAI.com 2023</p>
         </div>
     </footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
 </body>
 </html>
