@@ -231,7 +231,6 @@
                         <li class="__item"><a href="#">Contact us</a></li>
                     </ul>
                 </div>
-
                 <button class="accordion">News<img src="image/icon/plus.svg" alt="plus"></button>
                 <div class="panel">
                     <ul class="__list-block">
@@ -245,10 +244,13 @@
                         <li class="__item"><a href="#">Thoughts</a></li>
                     </ul>
                 </div>
-
                 <button class="accordion">Shop<img src="image/icon/plus.svg" alt="plus"></button>
                 <div class="panel">
-                <p>Lorem ipsum...</p>
+                <p>Shop Lorem ipsum...</p>
+                </div>
+                <button class="accordion">Jobs listing<img src="image/icon/plus.svg" alt="plus"></button>
+                <div class="panel">
+                <p>Jobs listing Lorem ipsum...</p>
                 </div>
             </div>
             <p class="footer_crunch">©crunchDUBAI.com 2023</p>
@@ -260,11 +262,7 @@
 
         for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
             this.classList.toggle("active");
-
-            /* Toggle between hiding and showing the active panel */
             var panel = this.nextElementSibling;
             if (panel.style.display === "block") {
             panel.style.display = "none";
