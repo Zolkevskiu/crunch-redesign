@@ -31,7 +31,7 @@ body {
 
 .nav {
   width: 100%;
-  height: 77px;
+  height: 8.1vh;
   border-bottom: 1px solid #202224;
   display: flex;
   align-items: center;
@@ -44,6 +44,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
+}
+.nav__content .nav__logo {
+  height: 100%;
 }
 
 .head__container {
@@ -52,14 +56,15 @@ body {
 
 .header {
   background-image: url("../image/header-bg.png");
-  min-height: 500px;
+  min-height: fit-content(20em);
+  padding-bottom: 40px;
 }
 
 .content__wrap {
   flex: 1 0 auto;
   width: 100%;
   padding: 0 40px;
-  margin: 40px auto;
+  margin: 2.08vw auto;
   display: flex;
   justify-content: space-between;
 }
@@ -78,16 +83,30 @@ body {
   list-style: none;
 }
 .head__list .head__li {
-  margin-left: 24px;
+  position: relative;
+  margin-left: 1.25vw;
 }
 .head__list .head__li .list__href {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 0.8vw;
   line-height: 19px;
   color: #FFFFFF;
 }
 .head__list .head__li .list__href:hover {
   color: rgba(255, 255, 255, 0.9);
+}
+.head__list .head__li::before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: -5px;
+  transition: 0.3s;
+}
+.head__list .head__li:hover::before {
+  width: 100%;
 }
 
 .button__cart {
@@ -95,10 +114,10 @@ body {
   margin-left: 24px;
   border: 1px solid #FFFFFF;
   border-radius: 4px;
-  width: 103px;
-  height: 40px;
+  width: 5.3vw;
+  height: 2.08vw;
   color: #fff;
-  font-size: 16px;
+  font-size: 0.83vw;
   line-height: 19px;
   background: none;
   display: flex;
@@ -106,19 +125,19 @@ body {
   justify-content: center;
 }
 .button__cart img {
-  width: 20px;
+  width: 1vw;
   position: relative;
-  left: -10px;
+  left: -0.52vw;
 }
 
 .button_login {
-  margin-left: 8px;
-  width: 63px;
-  height: 40px;
+  margin-left: 0.41vw;
+  width: 3.28vw;
+  height: 2.08vw;
   background: #02B6FB;
   border-radius: 4px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 0.83vw;
   line-height: 19px;
   display: flex;
   align-items: center;
@@ -169,13 +188,12 @@ body {
 }
 
 .header__title {
-  font-size: 56px;
+  font-size: 2.9vw;
   line-height: 100%;
   letter-spacing: -0.04em;
   color: #FFFFFF;
   font-family: "Inter bold";
   width: 100%;
-  max-width: 436px;
 }
 
 .header__content {
@@ -192,24 +210,39 @@ body {
 }
 
 .menu {
-  width: 270px;
+  width: 14vw;
 }
 .menu .menu__ul {
   list-style: none;
 }
 .menu .menu__list {
-  margin-top: 16px;
+  margin-top: 0.83vw;
 }
-.menu .menu__list:first-child {
+.menu .menu__list a:first-child {
   margin-top: 0;
 }
 .menu .munu__href {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.25vw;
   line-height: 110%;
   letter-spacing: -0.04em;
+  position: relative;
   color: #000000;
   text-decoration: none;
+}
+.menu .munu__href::before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  border-bottom: 2px;
+  background: #000;
+  position: absolute;
+  bottom: -5px;
+  transition: 0.3s;
+}
+.menu .munu__href:hover::before {
+  width: 100%;
 }
 
 .baner__title {
@@ -242,24 +275,27 @@ body {
 }
 
 .news__content {
-  margin-top: 80px;
+  margin-top: 4.16vw;
 }
 .news__content h2 {
-  font-size: 28px;
+  font-size: 1.458vw;
   line-height: 110%;
   letter-spacing: -0.04em;
   color: #000000;
 }
 .news__content hr {
-  margin-top: 12px;
+  margin-top: 0.62vw;
 }
 
 .news__content-block {
   background: #FFFFFF;
   border: 1px solid #EDEDED;
   border-radius: 8px;
-  margin-top: 40px;
+  margin-top: 2.08vw;
   display: flex;
+}
+.news__content-block img {
+  width: 16.7vw;
 }
 
 .news__data-content {
@@ -267,15 +303,15 @@ body {
 }
 .news__data-content .__data {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.72vw;
   line-height: 150%;
   letter-spacing: -0.04em;
   color: #B4B4B4;
 }
 .news__data-content .__authour {
-  margin-left: 24px;
+  margin-left: 1.25vw;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.72vw;
   line-height: 150%;
   letter-spacing: -0.04em;
   color: #000000;
@@ -285,47 +321,47 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 24px;
+  margin-left: 1.25vw;
 }
 .news__block .news__link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.72vw;
   line-height: 110%;
   letter-spacing: -0.04em;
   color: #38B4E3;
   text-decoration: none;
-  margin-top: 24px;
+  margin-top: 1.25vw;
 }
 .news__block .news__block-title {
-  font-size: 22px;
+  font-size: 1.14vw;
   line-height: 110%;
   font-weight: 600;
   letter-spacing: -0.04em;
-  margin-top: 12px;
+  margin-top: 0.62vw;
   color: #000000;
-  max-width: 350px;
+  max-width: 18.2vw;
   width: 100%;
 }
 .news__block .news__block_sub-title {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 0.83vw;
   line-height: 140%;
   letter-spacing: -0.02em;
   color: #000000;
-  margin-top: 24px;
-  max-width: 743px;
+  margin-top: 1.25vw;
+  max-width: 38.69vw;
   width: 100%;
 }
 
 .awareness__block {
-  padding: 24px;
-  margin-top: 40px;
+  padding: 1.25vw;
+  margin-top: 2.08vw;
   background: url("../image/awareness-bg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  border-radius: 8px;
-  height: 192px;
+  border-radius: 0.41vw;
+  height: 10vw;
   width: 100%;
 }
 .awareness__block .awareness__block-line {
@@ -335,37 +371,37 @@ body {
 }
 .awareness__block .awareness__block-line p {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 1.66vw;
+  line-height: 2.03125vw;
   letter-spacing: -0.04em;
   color: #FFFFFF;
-  max-width: 600px;
+  max-width: 31.25vw;
   width: 100%;
 }
 .awareness__block .awareness__block-line a {
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 0.83vw;
+  line-height: 0.98vw;
   letter-spacing: -0.04em;
   color: #FFFFFF;
   text-decoration: none;
 }
 .awareness__block .awareness__block-line a img {
-  margin-left: 18px;
+  margin-left: 0.93vw;
 }
 
 .events__content-wrap {
-  margin-top: 40px;
+  margin-top: 4.17vw;
   display: flex;
   justify-content: space-between;
 }
 
 .events__cart {
   border: 1px solid #EDEDED;
-  border-radius: 8px;
-  max-width: 347px;
+  border-radius: 0.83vw;
+  max-width: 36.2vw;
   width: 100%;
   height: auto;
 }
@@ -373,67 +409,70 @@ body {
   width: 100%;
 }
 .events__cart h2 {
-  font-size: 22px;
+  font-size: 2.29vw;
   line-height: 120%;
   letter-spacing: -0.04em;
   color: #222222;
-  margin: 20px 20px 16px 20px;
+  margin: 2.08vw 2.08vw 1.67vw 2.08vw;
 }
 .events__cart p {
-  margin: 0 20px 20px 20px;
-  font-size: 16px;
+  margin: 0 2.08vw 2.08vw 2.08vw;
+  font-size: 0.83vw;
   line-height: 140%;
   letter-spacing: -0.02em;
   color: #000000;
 }
 .events__cart .news__data-content {
-  margin-top: -5px;
+  margin-top: -0.52vw;
   background: #000000;
-  height: 45px;
+  height: 4.69vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 2.08vw;
 }
 .events__cart .news__data-content .__data {
-  font-size: 14px;
+  font-size: 1.46vw;
   line-height: 150%;
   letter-spacing: -0.04em;
   color: #FFFFFF;
 }
 .events__cart .news__data-content .__authour {
-  font-size: 14px;
+  font-size: 1.46vw;
   line-height: 150%;
   letter-spacing: -0.04em;
   color: #FFFFFF;
 }
+.events__cart:nth-child(2) {
+  margin: 0 1.25vw;
+}
 
 .startups__content .news__content-wrap .news__block .news__block-title {
-  max-width: 420px;
+  max-width: 43.8vw;
 }
 
 .startups__content .news__content-wrap .news__content-block {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 24px 0;
-  margin-top: 24px;
+  padding: 2.5vw 0;
+  margin-top: 2.5vw;
 }
 .startups__content .news__content-wrap .news__content-block img {
-  height: 230px;
+  height: 16.7vw;
 }
 
 .footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 40px;
+  margin-top: 4.17vw;
   flex: 0 0 auto;
   background: #fff;
   width: 100%;
-  height: 390px;
-  padding: 40px 40px 16px 40px;
+  height: 40.7vw;
+  padding: 4.17vw 4.17vw 1.67vw 4.17vw;
 }
 .footer .footer__content {
-  padding: 0 40px;
+  padding: 0 4.17vw;
   width: 100%;
   height: 100%;
   display: flex;
@@ -451,24 +490,24 @@ body {
   display: flex;
 }
 .footer .footer__content .content__list .__list-block {
-  margin-left: 75px;
+  margin-left: 7.82vw;
   list-style: none;
 }
 .footer .footer__content .content__list .__list-block .__item-title {
   margin-top: 0;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  margin-top: 16px;
+  font-size: 1.67vw;
+  line-height: 1.98vw;
+  margin-top: 1.67vw;
   color: #000000;
 }
 .footer .footer__content .content__list .__list-block .__item {
-  margin-top: 16px;
+  margin-top: 1.67vw;
 }
 .footer .footer__content .content__list .__list-block .__item a {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.67vw;
+  line-height: 1.98vw;
   color: #000000;
   text-decoration: none;
 }
@@ -481,25 +520,25 @@ body {
 }
 
 .accordion__content {
-  max-width: 343px;
+  max-width: 35.8vw;
   width: 100%;
   margin: 0 auto;
   margin-top: 45px;
 }
 
 .accordion {
-  max-width: 343px;
+  max-width: 35.8vw;
   width: 100%;
   background: none;
   cursor: pointer;
-  padding: 18px;
+  padding: 1.8vw;
   font-weight: 600;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.67vw;
+  line-height: 1.98vw;
   color: #000;
   border-bottom: 1px solid #000;
   display: flex;
@@ -511,32 +550,32 @@ body {
 }
 
 .panel {
-  padding: 18px;
+  padding: 1.87vw;
   background-color: white;
   display: none;
   overflow: hidden;
   height: auto;
-  min-height: 100px;
+  min-height: 10.4vw;
 }
 .panel .__list-block {
-  margin-left: 25px;
+  margin-left: 2.6vw;
   list-style: none;
 }
 .panel .__list-block .__item-title {
   margin-top: 0;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  margin-top: 16px;
+  font-size: 1.67vw;
+  line-height: 1.98vw;
+  margin-top: 1.67vw;
   color: #000000;
 }
 .panel .__list-block .__item {
-  margin-top: 16px;
+  margin-top: 1.67vw;
 }
 .panel .__list-block .__item a {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.67vw;
+  line-height: 1.98vw;
   color: #000000;
   text-decoration: none;
 }
