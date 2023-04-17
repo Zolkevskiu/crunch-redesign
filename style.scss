@@ -595,6 +595,10 @@ body {
     .nav {
         height: 77px;
     }
+    .nav__active {
+        align-items: flex-start;
+        height: 200px;
+    }
     .button__cart {
         width: 103px;
         height: 40px;
@@ -784,6 +788,9 @@ body {
     }
 }
 @media(max-width:768px) {
+    .news__content-block img {
+        max-width: 100%;
+    }
     .content__wrap {
         padding: 0 0;
     }
