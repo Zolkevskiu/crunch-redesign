@@ -39,7 +39,6 @@ body {
 
 .nav__content {
   padding: 0 40px;
-  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -58,7 +57,6 @@ body {
 
 .content__wrap {
   flex: 1 0 auto;
-  max-width: 1440px;
   width: 100%;
   padding: 0 40px;
   margin: 40px auto;
@@ -70,7 +68,7 @@ body {
   width: 100%;
 }
 .article__content h1 {
-  max-width: 534px;
+  font-size: 1.5vw;
   width: 100%;
 }
 
@@ -181,7 +179,6 @@ body {
 }
 
 .header__content {
-  max-width: 1440px;
   width: 100%;
   padding: 0 40px;
   margin: 0 auto;
@@ -218,20 +215,30 @@ body {
 .baner__title {
   width: 100%;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 95px 430px;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: 0 1fr;
 }
 .baner__title .baner__sec {
   grid-column-start: 2;
   justify-self: end;
+  grid-row-start: 2;
+  display: block;
+  width: 100%;
+  align-self: stretch;
+}
+.baner__title .baner__sec img {
+  width: 100%;
 }
 .baner__title h1 {
   grid-column-start: 1;
   grid-row-start: 1;
 }
 .baner__title .baner__main {
+  align-self: stretch;
   grid-column-start: 1;
   grid-row-start: 2;
+  align-self: end;
+  width: 95%;
 }
 
 .news__content {
@@ -427,7 +434,6 @@ body {
 }
 .footer .footer__content {
   padding: 0 40px;
-  max-width: 1440px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -606,6 +612,9 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .content__wrap {
+    padding: 0 0;
+  }
   .nav__content {
     max-width: 343px;
     padding: 0 0;
@@ -648,6 +657,7 @@ body {
     max-width: 343px;
     width: 100%;
     margin-top: 24px;
+    align-self: center;
   }
   .baner__title h1 {
     max-width: 343px;
@@ -721,4 +731,10 @@ body {
 }
 .header-active {
   min-height: 705px;
+}
+
+@media (max-width: 360px) {
+  .content__wrap {
+    padding: 0 20px;
+  }
 }
