@@ -38,7 +38,7 @@ body {
 }
 
 .nav__content {
-  padding: 0 40px;
+  padding: 0 2.08vw;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -57,13 +57,13 @@ body {
 .header {
   background-image: url("../image/header-bg.png");
   min-height: fit-content(20em);
-  padding-bottom: 40px;
+  padding-bottom: 2.08vw;
 }
 
 .content__wrap {
   flex: 1 0 auto;
   width: 100%;
-  padding: 0 40px;
+  padding: 0 2.08vw;
   margin: 2.08vw auto;
   display: flex;
   justify-content: space-between;
@@ -99,10 +99,10 @@ body {
   content: "";
   display: block;
   width: 0%;
-  height: 1px;
+  height: 0.052vw;
   background: #fff;
   position: absolute;
-  bottom: -5px;
+  bottom: -0.26vw;
   transition: 0.3s;
 }
 .head__list .head__li:hover::before {
@@ -111,7 +111,7 @@ body {
 
 .button__cart {
   text-decoration: none;
-  margin-left: 24px;
+  margin-left: 1.25vw;
   border: 1px solid #FFFFFF;
   border-radius: 4px;
   width: 5.3vw;
