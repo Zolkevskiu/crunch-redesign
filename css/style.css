@@ -39,7 +39,6 @@ body {
 
 .nav__content {
   padding: 0 40px;
-  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -58,7 +57,6 @@ body {
 
 .content__wrap {
   flex: 1 0 auto;
-  max-width: 1440px;
   width: 100%;
   padding: 0 40px;
   margin: 40px auto;
@@ -67,7 +65,7 @@ body {
 }
 
 .article__content {
-  width: 100%;
+  width: 1100px;
 }
 .article__content h1 {
   max-width: 534px;
@@ -181,7 +179,6 @@ body {
 }
 
 .header__content {
-  max-width: 1440px;
   width: 100%;
   padding: 0 40px;
   margin: 0 auto;
@@ -224,6 +221,7 @@ body {
 .baner__title .baner__sec {
   grid-column-start: 2;
   justify-self: end;
+  display: block;
 }
 .baner__title h1 {
   grid-column-start: 1;
