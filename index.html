@@ -15,7 +15,7 @@
                 <img src="image/logo.svg" alt="logo" class="nav__logo">
                 <div class="head__container">
                     <ul class="head__list">
-                        <li class="head__li"><a href="#" class="list__href">News</a></li>
+                        <li class="head__li"><a href="news_viktoriia.html" class="list__href">News</a></li>
                         <li class="head__li"><a href="#" class="list__href">Events</a></li>
                         <li class="head__li"><a href="#" class="list__href">Startup of the day</a></li>
                         <li class="head__li"><a href="#" class="list__href">About</a></li>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="menu__icon-content"><i class="fa fa-bars menu__icon" onclick="menu()"></i></div>
                 <ul class="head__list list_menu">
-                    <li class="head__li"><a href="#" class="list__href">News</a></li>
+                    <li class="head__li"><a href="news_viktoriia.html" class="list__href">News</a></li>
                     <li class="head__li"><a href="#" class="list__href">Events</a></li>
                     <li class="head__li"><a href="#" class="list__href">Startup of the day</a></li>
                     <li class="head__li"><a href="#" class="list__href">About</a></li>
@@ -272,21 +272,6 @@
             <p class="footer_crunch">©crunchDUBAI.com 2023</p>
         </div>
     </footer>
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-            panel.style.display = "none";
-            } else {
-            panel.style.display = "block";
-            }
-        });
-        }
-    </script>
+    <script src="accordion.js"></script>
 </body>
 </html>

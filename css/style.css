@@ -19,6 +19,10 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: #1D40F3;
+}
+
 html,
 body {
   height: 100%;
@@ -69,6 +73,11 @@ body {
   justify-content: space-between;
 }
 
+.content__wrap-viktoriia {
+  padding: 0 0 0 2.08vw;
+  margin: 0 auto 0 auto;
+}
+
 .article__content {
   width: 100%;
 }
@@ -77,6 +86,67 @@ body {
   width: 100%;
 }
 
+.victoria__article-content {
+  padding-right: 24px;
+}
+.victoria__article-content .article__text-block {
+  padding: 40px 0 0 0;
+}
+.victoria__article-content .article__text-block h2 {
+  font-size: 1.14vw;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+.victoria__article-content .article__text-block .__title-sec {
+  margin-top: 24px;
+}
+.victoria__article-content .article__text-block p {
+  max-width: 49.8vw;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.14vw;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #000000;
+  margin-top: 24px;
+}
+.victoria__article-content .article__text-block p a {
+  color: #000;
+}
+.victoria__article-content .victoriia__views-block {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 48px;
+  opacity: 0.6;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #EDEDED;
+  padding: 12px 0px;
+  gap: 24px;
+}
+.victoria__article-content .victoriia__views-block .__icon-block {
+  display: flex;
+  align-items: center;
+}
+.victoria__article-content .victoriia__views-block .__icon-block div {
+  display: flex;
+  align-items: center;
+}
+.victoria__article-content .victoriia__views-block .__icon-block div .__views {
+  margin-left: 6px;
+}
+.victoria__article-content .victoriia__views-block .__icon-block span {
+  margin-left: 13px;
+  display: flex;
+  align-items: center;
+}
+.victoria__article-content .victoriia__views-block .__icon-block span .__likes {
+  margin-left: 6px;
+}
 .head__list {
   display: flex;
   align-items: center;
@@ -209,6 +279,29 @@ body {
   gap: 14px;
 }
 
+.breadcrumb {
+  margin-bottom: 40px;
+}
+.breadcrumb ul {
+  display: flex;
+  list-style: none;
+}
+.breadcrumb ul li {
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  opacity: 0.6;
+  margin-left: 8px;
+}
+.breadcrumb ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.breadcrumb ul li:first-child {
+  opacity: 1;
+}
+
 .menu {
   width: 14vw;
 }
@@ -243,6 +336,13 @@ body {
 }
 .menu .munu__href:hover::before {
   width: 100%;
+}
+
+.viktoriia__menu {
+  padding: 40px 0 0 24px;
+  max-width: 21.7vw;
+  width: 100%;
+  background: #F5F7F9;
 }
 
 .baner__title {
@@ -468,11 +568,10 @@ body {
   flex: 0 0 auto;
   background: #fff;
   width: 100%;
-  height: 40.7vw;
-  padding: 4.17vw 4.17vw 1.67vw 4.17vw;
+  height: 20.2vw;
+  padding: 2vw 2vw 1.67vw 2vw;
 }
 .footer .footer__content {
-  padding: 0 4.17vw;
   width: 100%;
   height: 100%;
   display: flex;
@@ -490,29 +589,32 @@ body {
   display: flex;
 }
 .footer .footer__content .content__list .__list-block {
-  margin-left: 7.82vw;
+  margin-left: 2.6vw;
   list-style: none;
 }
 .footer .footer__content .content__list .__list-block .__item-title {
   margin-top: 0;
   font-weight: 600;
-  font-size: 1.67vw;
+  font-size: 0.83vw;
   line-height: 1.98vw;
-  margin-top: 1.67vw;
   color: #000000;
 }
 .footer .footer__content .content__list .__list-block .__item {
-  margin-top: 1.67vw;
+  font-size: 0.83vw;
 }
 .footer .footer__content .content__list .__list-block .__item a {
   font-weight: 400;
-  font-size: 1.67vw;
+  font-size: 0.83vw;
   line-height: 1.98vw;
   color: #000000;
   text-decoration: none;
 }
 .footer .footer__content .content__list .__list-block .__item a:hover {
   color: #1D40F3;
+}
+
+.footer__viktoriia {
+  margin-top: 0;
 }
 
 .footer_crunch, .accordion__content {
