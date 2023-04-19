@@ -87,10 +87,10 @@ body {
 }
 
 .victoria__article-content {
-  padding-right: 24px;
+  padding-right: 1.25vw;
 }
 .victoria__article-content .article__text-block {
-  padding: 40px 0 0 0;
+  padding: 2.08vw 0 0 0;
 }
 .victoria__article-content .article__text-block h2 {
   font-size: 1.14vw;
@@ -99,54 +99,157 @@ body {
   color: #000000;
 }
 .victoria__article-content .article__text-block .__title-sec {
-  margin-top: 24px;
+  margin-top: 1.25vw;
 }
 .victoria__article-content .article__text-block p {
-  max-width: 49.8vw;
+  max-width: 69.8vw;
   width: 100%;
   font-weight: 400;
   font-size: 1.14vw;
   line-height: 150%;
   letter-spacing: -0.04em;
   color: #000000;
-  margin-top: 24px;
+  margin-top: 1.25vw;
 }
 .victoria__article-content .article__text-block p a {
   color: #000;
 }
 .victoria__article-content .victoriia__views-block {
-  margin-top: 60px;
+  margin-top: 3.125vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 48px;
+  height: 2.5vw;
   opacity: 0.6;
   border-width: 1px 0px;
   border-style: solid;
   border-color: #EDEDED;
-  padding: 12px 0px;
-  gap: 24px;
+  padding: 0.625vw 0px;
+  gap: 1.25vw;
 }
 .victoria__article-content .victoriia__views-block .__icon-block {
   display: flex;
   align-items: center;
+  font-size: 0.625vw;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: #000000;
 }
 .victoria__article-content .victoriia__views-block .__icon-block div {
   display: flex;
   align-items: center;
 }
 .victoria__article-content .victoriia__views-block .__icon-block div .__views {
-  margin-left: 6px;
+  margin-left: 0.3125vw;
 }
 .victoria__article-content .victoriia__views-block .__icon-block span {
-  margin-left: 13px;
+  margin-left: 0.677vw;
   display: flex;
   align-items: center;
 }
 .victoria__article-content .victoriia__views-block .__icon-block span .__likes {
+  margin-left: 0.3125vw;
+}
+.victoria__article-content .victoriia__views-block .__icon-block img {
+  width: 0.83vw;
+}
+.victoria__article-content .victoriia__views-block h3 {
+  font-size: 0.83vw;
+}
+
+.recent__news-block {
+  margin: 4.166vw 0 2.08vw 0;
+  width: 100%;
+}
+.recent__news-block .__block-title {
+  font-weight: 700;
+  font-size: 1.45vw;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+.recent__news-block .recent__news-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.25vw;
+}
+.recent__news-block .recent__news-row .__news-col:nth-child(2) {
+  margin: 0 1.25vw;
+}
+.recent__news-block .recent__news-row .__news-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.04vw;
+  width: 21.82vw;
+  min-width: 303px;
+  height: auto;
+  min-height: 20.6vw;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 12px;
+}
+.recent__news-block .recent__news-row .__news-col .__col-content .__content-block {
+  display: flex;
+  flex-direction: column;
+}
+.recent__news-block .recent__news-row .__news-col .__news-date {
+  font-size: 0.72vw;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #B4B4B4;
+}
+.recent__news-block .recent__news-row .__news-col .__news-name {
+  font-size: 0.72vw;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #000000;
+  margin-top: 0.208vw;
+}
+.recent__news-block .recent__news-row .__news-col .__news__col-title {
+  font-size: 1.14vw;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #222222;
+  margin-top: 1.041vw;
+}
+.recent__news-block .recent__news-row .__news-col .__news__col__sub-title {
+  font-weight: 400;
+  font-size: 0.83vw;
+  margin-top: 0.83vw;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.recent__news-block .recent__news-row .__news-col .__col-footer {
+  margin: 0 -1.041vw -1.041vw -1.041vw;
+  padding: 0 1.041vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.125vw;
+  border-top: 1px solid #EDEDED;
+}
+.recent__news-block .recent__news-row .__news-col .__col-footer .__footer-likes {
+  display: flex;
+  align-items: center;
+  font-size: 0.625vw;
+}
+.recent__news-block .recent__news-row .__news-col .__col-footer .__footer-likes .__likes {
   margin-left: 6px;
 }
+.recent__news-block .recent__news-row .__news-col .__col-footer .__footer-likes img {
+  width: 0.83vw;
+}
+.recent__news-block .recent__news-row .__news-col .__col-footer .__footer-href {
+  font-size: 0.83vw;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: #02B6FB;
+  text-decoration: none;
+}
+
 .head__list {
   display: flex;
   align-items: center;
@@ -268,31 +371,31 @@ body {
 
 .header__content {
   width: 100%;
-  padding: 0 40px;
+  padding: 0 2.08vw;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 4.16vw;
 }
 .header__content .content__icon-img {
-  margin-top: 80px;
+  margin-top: 4.16vw;
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
 }
 
 .breadcrumb {
-  margin-bottom: 40px;
+  margin-bottom: 2.08vw;
 }
 .breadcrumb ul {
   display: flex;
   list-style: none;
 }
 .breadcrumb ul li {
-  font-size: 16px;
+  font-size: 0.83vw;
   line-height: 100%;
   letter-spacing: -0.04em;
   color: #FFFFFF;
   opacity: 0.6;
-  margin-left: 8px;
+  margin-left: 0.416vw;
 }
 .breadcrumb ul li a {
   text-decoration: none;
@@ -339,10 +442,57 @@ body {
 }
 
 .viktoriia__menu {
-  padding: 40px 0 0 24px;
-  max-width: 21.7vw;
-  width: 100%;
+  padding: 2.08vw 2.08vw 0 1.25vw;
+  width: 28.54vw;
   background: #F5F7F9;
+}
+.viktoriia__menu .__menu-title {
+  font-size: 1.66vw;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+.viktoriia__menu .__menu__column-content {
+  margin-top: 2.08vw;
+}
+.viktoriia__menu .__menu__column-content .__content-block {
+  margin-top: 1.041vw;
+  background: #FFFFFF;
+  border-radius: 8px;
+  height: auto;
+  padding: 1.041vw;
+}
+.viktoriia__menu .__menu__column-content .__content-block .__block-paragraph {
+  font-size: 0.83vw;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #000000;
+  opacity: 0.6;
+}
+.viktoriia__menu .__menu__column-content .__content-block .__block-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.041vw;
+}
+.viktoriia__menu .__menu__column-content .__content-block .__block-footer .__price {
+  font-size: 1.145vw;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: #131313;
+}
+.viktoriia__menu .__menu__column-content .__content-block .__block-footer img {
+  width: 1.25vw;
+}
+.viktoriia__menu .menu__ul {
+  margin-top: 4.16vw;
+}
+.viktoriia__menu .menu__ul .__ul-title {
+  font-size: 1.66vw;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: #000000;
+  margin-bottom: 2.08vw;
 }
 
 .baner__title {
@@ -584,6 +734,15 @@ body {
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
+}
+.footer .footer__content .content__logo img {
+  width: 11.45vw;
+}
+.footer .footer__content .content__logo p {
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: #000000;
+  font-size: 0.83vw;
 }
 .footer .footer__content .content__list {
   display: flex;
