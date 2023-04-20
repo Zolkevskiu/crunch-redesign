@@ -210,6 +210,7 @@ body {
             .__news-name {
                 font-size: 0.72vw;
                 line-height: 150%;
+                font-weight: 500;
                 letter-spacing: -0.04em;
                 
                 color: #000000;
@@ -1004,6 +1005,133 @@ body {
             padding: 0 0 0 0;
         }
     }
+    .victoria__article-content .article__text-block {
+        h2 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .victoria__article-content .victoriia__views-block .__icon-block {
+        div {
+            font-size: 12px;
+        }
+        span {
+            font-size: 12px;
+        }
+    }
+    .content__wrap-viktoriia {
+        padding: 0 0 0 40px;
+        margin: 0 auto 0 auto;
+    }
+    .victoria__article-content .victoriia__views-block {
+        height: 48px;
+    }
+    .victoria__article-content .victoriia__views-block h3 {
+        font-size: 16px;
+    }
+    .recent__news-block .__block-title {
+        font-size: 28px;
+    }
+    .recent__news-block .recent__news-row {
+        margin-top: 24px;
+    }
+    .recent__news-block {
+        margin: 80px 0 40px 0;
+    }
+    .recent__news-block .recent__news-row .__news-col {
+        min-height: 397px;
+        padding: 20px;
+        min-width: 0;
+        width: 100%;
+        max-width: 303px;
+        .__news-date {
+            font-size: 14px;
+        }
+        .__news-name {
+            margin-top: 4px;
+            font-size: 14px;
+        }
+        .__news__col-title {
+            font-size: 22px;
+        }
+        .__news__col__sub-title {
+            font-size: 16px;
+            margin-top: 16px;
+        }
+        .__col-footer {
+            margin: 0 -20px -20px -20px;
+            padding: 0 20px;
+            height: 60px;
+            .__footer-likes {
+                font-size: 12px;
+                img {
+                    width: 15px;
+                }
+            }
+            .__footer-href {
+                font-size: 16px;
+            }
+        }
+    }
+    .header__viktoriia {
+        min-height: 328px;
+        height: auto;
+    }
+    .breadcrumb ul li {
+        font-size: 16px;
+    }
+    .viktoriia__menu {
+        max-width: 418px;
+        width: 100%;
+        .__menu-title {
+            font-size: 32px;
+        }
+        .__menu__column-content .__content-block .__block-paragraph {
+            font-size: 16px;
+        }
+        .__menu__column-content .__content-block .__block-footer {
+            margin-top: 20px;
+            .__price {
+                font-size: 22px;
+            }
+            img {
+                width: 24px;
+            }
+        }
+        .menu__ul {
+            .munu__href {
+                font-size: 16px;
+            }
+            .__ul-title {
+                font-size: 32px;
+            }
+        }
+    }
+    .footer__viktoriia .footer__content .content__list .__list-block {
+        margin-left: 45px;
+    }
+    .footer__viktoriia .footer__content .content__list .__list-block .__item {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+    .footer .footer__content .content__list .__list-block .__item-title {
+        margin-top: 0;
+    }
+    .footer__viktoriia .footer__content .content__list .__list-block .__item a {
+        font-size: 16px;
+    }
+    .footer__viktoriia {
+        height: 389px;
+    }
+    .footer .footer__content .content__logo img {
+        max-width: 220px;
+        width: 100%;
+    }
+    .footer .footer__content .content__logo p {
+        font-size: 16px;
+    }
 }
 @media(max-width:1360px) {
     .events__cart:nth-child(2) {
@@ -1030,10 +1158,26 @@ body {
         width: auto;
         max-height: 125%;
     }
+    .viktoriia__menu {
+        max-width: 380px;
+    }
+    .victoria__article-content {
+        width: 100%;
+        padding: 0 24px 0 0;
+    }
+    .header__viktoriia {
+        min-height: 390px;
+        .header__content {
+            margin-top: 80px;
+        }
+    }
 } 
 @media(max-width:1260px) {
     .article__content {
         width: 80%;
+    }
+    .viktoriia__menu {
+        max-width: 260px;
     }
 }
 @media(max-width:1100px) {
@@ -1053,6 +1197,45 @@ body {
     }
     .article__content {
         width: 100%;
+    }
+    .viktoriia__menu {
+        display: block;
+    }
+    .content__wrap-viktoriia {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .victoria__article-content {
+        max-width: 688px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .recent__news-block .recent__news-row {
+        flex-wrap: wrap;
+        gap: 24px;
+        .__news-col {
+            max-width: 332px;
+            min-height: 332px;
+        }
+        .__news-col:nth-child(2) {
+            margin: 0;
+        }
+    }
+    .viktoriia__menu {
+        max-width: none;
+        padding: 40px;
+        .__menu__column-content .__content-block {
+            padding: 20px;
+        }
+    }
+    .header__viktoriia {
+        min-height: 453px;
+        .header__content {
+            max-width: 688px;
+            padding: 0;
+        }
     }
 } 
 @media(max-width:900px) {
