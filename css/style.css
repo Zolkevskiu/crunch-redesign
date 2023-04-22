@@ -12,6 +12,13 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "Inter SemiBold";
+  src: url("../fonts/Inter-SemiBold.eot");
+  src: local("Inter Semi Bold"), local("Inter-SemiBold"), url("../fonts/Inter-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 * {
   font-family: "Inter regular";
   margin: 0;
@@ -197,6 +204,7 @@ body {
 .recent__news-block .recent__news-row .__news-col .__news-date {
   font-size: 0.937vw;
   line-height: 150%;
+  font-weight: 500;
   letter-spacing: -0.04em;
   color: #B4B4B4;
 }
@@ -212,6 +220,7 @@ body {
   font-size: 1.354vw;
   line-height: 120%;
   letter-spacing: -0.04em;
+  font-family: "Inter SemiBold";
   color: #222222;
   margin-top: 1.041vw;
 }
@@ -219,6 +228,7 @@ body {
   font-weight: 400;
   font-size: 1.04vw;
   margin-top: 0.83vw;
+  font-weight: 400;
   line-height: 140%;
   letter-spacing: -0.02em;
   color: #000000;
@@ -367,7 +377,7 @@ body {
   line-height: 100%;
   letter-spacing: -0.04em;
   color: #FFFFFF;
-  font-family: "Inter bold";
+  font-family: "Inter SemiBold";
   width: 100%;
 }
 
