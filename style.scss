@@ -269,30 +269,29 @@ body {
     align-items: center;
     list-style: none;
     .head__li {
-        position: relative;
         margin-left: 1.25vw;
         .list__href {
+            position: relative;
             text-decoration: none;
             font-size: 0.8vw;
             line-height: 19px;
             color: #FFFFFF;
             &:hover {
                 color: rgb(255, 255, 255, 90%);
+                &::before {
+                    width: 100%;
+                }
             }
-        }
-        &::before {
+            &::before {
             content: '';
             display: block;
             width: 0%;
             height: 0.052vw;
             background: #fff;
             position: absolute;
+            right: 0;
             bottom: -0.26vw;
             transition: .3s;
-        }
-        &:hover {
-            &::before {
-                width: 100%;
             }
         }
     }
@@ -1255,6 +1254,7 @@ body {
         padding: 40px;
         .__menu__column-content .__content-block {
             padding: 20px;
+            margin-top: 20px;
         }
     }
     .header__viktoriia {
@@ -1323,6 +1323,7 @@ body {
     .header__content {
         max-width: 343px;
         padding: 0 0;
+        margin-top: 40px;
     }
     .header {
         height: 600px;
@@ -1452,6 +1453,21 @@ body {
         max-width: 375px;
     }
     .footer__viktoriia {
+        padding: 40px 16px;
+    }
+    .breadcrumb ul li a {
+        display: block;
+        width: 50px;
+    }
+}
+@media(max-width:600px) {
+    .nav__content {
+        padding: 0 16px;
+    }
+    .article__content {
+        padding: 0 16px;
+    }
+    .footer {
         padding: 40px 16px;
     }
 }

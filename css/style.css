@@ -257,10 +257,10 @@ body {
   list-style: none;
 }
 .head__list .head__li {
-  position: relative;
   margin-left: 1.25vw;
 }
 .head__list .head__li .list__href {
+  position: relative;
   text-decoration: none;
   font-size: 0.8vw;
   line-height: 19px;
@@ -269,18 +269,19 @@ body {
 .head__list .head__li .list__href:hover {
   color: rgba(255, 255, 255, 0.9);
 }
-.head__list .head__li::before {
+.head__list .head__li .list__href:hover::before {
+  width: 100%;
+}
+.head__list .head__li .list__href::before {
   content: "";
   display: block;
   width: 0%;
   height: 0.052vw;
   background: #fff;
   position: absolute;
+  right: 0;
   bottom: -0.26vw;
   transition: 0.3s;
-}
-.head__list .head__li:hover::before {
-  width: 100%;
 }
 
 .button__cart {
@@ -1230,6 +1231,7 @@ body {
   }
   .viktoriia__menu .__menu__column-content .__content-block {
     padding: 20px;
+    margin-top: 20px;
   }
   .header__viktoriia {
     min-height: 453px;
@@ -1295,6 +1297,7 @@ body {
   .header__content {
     max-width: 343px;
     padding: 0 0;
+    margin-top: 40px;
   }
   .header {
     height: 600px;
@@ -1425,6 +1428,21 @@ body {
     max-width: 375px;
   }
   .footer__viktoriia {
+    padding: 40px 16px;
+  }
+  .breadcrumb ul li a {
+    display: block;
+    width: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .nav__content {
+    padding: 0 16px;
+  }
+  .article__content {
+    padding: 0 16px;
+  }
+  .footer {
     padding: 40px 16px;
   }
 }
