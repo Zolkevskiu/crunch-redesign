@@ -131,7 +131,7 @@ body {
 .victoria__article-content .victoriia__views-block .__icon-block {
   display: flex;
   align-items: center;
-  font-size: 0.625vw;
+  font-size: 0.83vw;
   line-height: 110%;
   letter-spacing: -0.04em;
   color: #000000;
@@ -152,7 +152,7 @@ body {
   margin-left: 0.3125vw;
 }
 .victoria__article-content .victoriia__views-block .__icon-block img {
-  width: 0.83vw;
+  width: 1.041vw;
 }
 .victoria__article-content .victoriia__views-block h3 {
   font-size: 0.83vw;
@@ -164,7 +164,7 @@ body {
 }
 .recent__news-block .__block-title {
   font-weight: 700;
-  font-size: 1.45vw;
+  font-size: 1.66vw;
   line-height: 110%;
   letter-spacing: -0.04em;
   color: #000000;
@@ -182,10 +182,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 1.04vw;
-  width: 21.82vw;
+  width: 23.82vw;
   min-width: 303px;
   height: auto;
-  min-height: 20.6vw;
+  min-height: 24.6vw;
   background: #FFFFFF;
   border: 1px solid #EDEDED;
   border-radius: 12px;
@@ -195,13 +195,13 @@ body {
   flex-direction: column;
 }
 .recent__news-block .recent__news-row .__news-col .__news-date {
-  font-size: 0.72vw;
+  font-size: 0.937vw;
   line-height: 150%;
   letter-spacing: -0.04em;
   color: #B4B4B4;
 }
 .recent__news-block .recent__news-row .__news-col .__news-name {
-  font-size: 0.72vw;
+  font-size: 0.937vw;
   line-height: 150%;
   font-weight: 500;
   letter-spacing: -0.04em;
@@ -209,7 +209,7 @@ body {
   margin-top: 0.208vw;
 }
 .recent__news-block .recent__news-row .__news-col .__news__col-title {
-  font-size: 1.14vw;
+  font-size: 1.354vw;
   line-height: 120%;
   letter-spacing: -0.04em;
   color: #222222;
@@ -217,7 +217,7 @@ body {
 }
 .recent__news-block .recent__news-row .__news-col .__news__col__sub-title {
   font-weight: 400;
-  font-size: 0.83vw;
+  font-size: 1.04vw;
   margin-top: 0.83vw;
   line-height: 140%;
   letter-spacing: -0.02em;
@@ -235,16 +235,16 @@ body {
 .recent__news-block .recent__news-row .__news-col .__col-footer .__footer-likes {
   display: flex;
   align-items: center;
-  font-size: 0.625vw;
+  font-size: 0.83vw;
 }
 .recent__news-block .recent__news-row .__news-col .__col-footer .__footer-likes .__likes {
   margin-left: 6px;
 }
 .recent__news-block .recent__news-row .__news-col .__col-footer .__footer-likes img {
-  width: 0.83vw;
+  width: 1.04vw;
 }
 .recent__news-block .recent__news-row .__news-col .__col-footer .__footer-href {
-  font-size: 0.83vw;
+  font-size: 1.04vw;
   line-height: 110%;
   letter-spacing: -0.04em;
   color: #02B6FB;
