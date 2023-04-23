@@ -174,6 +174,85 @@ body {
         }
     }
 }
+.dubai__startups-content {
+    padding-top: 2.08vw;
+    .glocal__content-block {
+        .__block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1.25vw;
+            border-bottom: 1px solid #EDEDED;
+            margin-top: 1.25vw;
+            &:first-child {
+                margin-top: 2.083vw;
+            }
+            .__block-content {
+                display: flex;
+                .__block-logo {
+                    width: 6.758vw;
+                    height: 6.758vw;
+                }
+            }
+            .__text-block {
+                min-height: 100%;
+                margin-left: 1.25vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .__title {
+                    font-weight: 600;
+                    font-size: 1.25vw;
+                    line-height: 110%;
+                    letter-spacing: -0.04em;
+                    
+                    color: #000000;
+                }
+                .__paragraph {
+                    max-width: 26.041vw;
+                    width: 100%;
+                    margin-bottom: 1.5625vw;
+                    font-weight: 400;
+                    font-size: 0.9375vw;
+                    line-height: 150%;
+                    letter-spacing: -0.04em;
+                    color: #000000;
+                    
+                    opacity: 0.6;
+                }
+                .__icon-block {
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 6.66vw;
+                    width: 100%;
+                }
+            }
+            .__likes-block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 3.33vw;
+                width: 100%;
+                max-width: 4vw;
+                height: 2.083vw;
+                border: 1px solid #EDEDED;
+                border-radius: 8px;
+                img {
+                    width: 1.25vw;
+                }
+                span {
+                    margin-left: 0.2604vw;
+                    font-weight: 500;
+                    font-size: 1.041vw;
+                    line-height: 110%;
+                    letter-spacing: -0.04em;
+                    
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
 .recent__news-block {
     margin: 4.166vw 0 2.08vw 0;
     width: 100%;
@@ -530,6 +609,9 @@ body {
         }
     }
 }
+.startups__dubai-menu {
+    padding-bottom: 2.083vw;
+}
 .baner__title {
     width: 100%;
     display: grid;
@@ -750,6 +832,32 @@ body {
         height: 16.7vw;
     }
 }
+.apply__block {
+    border-bottom: 1px solid #EDEDED;
+    padding-bottom: 2.083vw;
+    .__title {
+        font-weight: 600;
+        font-size: 1.458vw;
+        line-height: 1.5vw;
+    }
+    .apply__button {
+        width: 6.45vw;
+        height: 2.60vw;
+        
+        background: #000000;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.041vw;
+        line-height: 0.98vw;
+        margin-top: 0.83vw;
+    }
+}
+
 .footer {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     margin-top: 4.17vw;
@@ -1189,6 +1297,81 @@ body {
     .viktoriia__menu .__menu-content .menu__ul {
         margin-top: 80px;
     }
+    .apply__block {
+        border-bottom: 1px solid #EDEDED;
+        padding-bottom: 40px;
+        .__title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        .apply__button {
+            width: 124px;
+            height: 50px;
+            
+            background: #000000;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            margin-top: 16px;
+        }
+    }
+    .dubai__startups-content {
+        padding-top: 40px;
+        .glocal__content-block {
+            .__block {
+                padding-bottom: 24px;
+                margin-top: 24px;
+                &:first-child {
+                    margin-top: 40px;
+                }
+                .__block-content {
+                    display: flex;
+                    .__block-logo {
+                        width: 120px;
+                        height: 120px;
+                    }
+                }
+                .__text-block {
+                    min-height: 100%;
+                    margin-left: 24px;
+                    .__title {
+                        font-weight: 600;
+                        font-size: 20px;
+                    }
+                    .__paragraph {
+                        max-width: 500px;
+                        width: 100%;
+                        margin-bottom: 30px;
+                        font-size: 14px;
+                    }
+                    .__icon-block {
+                        max-width: 128px;
+                        width: 100%;
+                    }
+                }
+                .__likes-block {
+                    min-width: 64px;
+                    width: 100%;
+                    max-width: 80px;
+                    height: 40px;
+                    img {
+                        width: 24px;
+                    }
+                    span {
+                        margin-left: 5px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media(max-width:1360px) {
     .events__cart:nth-child(2) {
@@ -1227,6 +1410,12 @@ body {
         .header__content {
             margin-top: 80px;
         }
+    }
+    .apply__block {
+        margin-top: 20px;
+    }
+    .header__dubai-startups {
+        min-height: 314px;
     }
 } 
 @media(max-width:1260px) {
@@ -1294,6 +1483,9 @@ body {
             max-width: 688px;
             padding: 0;
         }
+    }
+    .header__dubai-startups {
+        min-height: 314px;
     }
 } 
 @media(max-width:900px) {
@@ -1489,6 +1681,25 @@ body {
     .breadcrumb ul li a {
         display: block;
         width: 50px;
+    }
+    .dubai__startups-content .glocal__content-block .__block {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .dubai__startups-content .glocal__content-block .__block .__text-block {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    .dubai__startups-content .glocal__content-block .__block .__text-block .__paragraph {
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    .dubai__startups-content .glocal__content-block .__block .__block-content {
+        flex-direction: column;
+    }
+    .header__dubai-startups .breadcrumb ul li a {
+        display: block;
+        width: 56px;
     }
 }
 @media(max-width:600px) {
