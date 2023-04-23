@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Viktoriia</title>
 </head>
 <body>
@@ -23,22 +23,32 @@
                     <a href="#" class="button__cart"><img src="image/icon/cart.svg" alt="img">Shop</a>
                     <a href="#" class="button_login">Login</a>
                 </div>
-                <div class="menu__icon-content"><i class="fa fa-bars menu__icon" onclick="menu()"></i></div>
+                <div class="menu__icon-content">
+                    <a href="#" class="button__cart"><img src="image/icon/cart.svg" alt="img">Shop</a>
+                    <a href="#" class="button_login">Login</a>
+                    <i class="fa fa-bars menu__icon" onclick="menu()"></i>
+                    <i class="fa fa-light fa-xmark menu__close-ico" style="color: #ffffff;" onclick="menu()"></i>
+                </div>
                 <ul class="head__list list_menu">
-                    <li class="head__li"><a href="#" class="list__href">News</a></li>
+                    <li class="head__li"><a href="news_viktoriia.html" class="list__href">News</a></li>
                     <li class="head__li"><a href="#" class="list__href">Events</a></li>
                     <li class="head__li"><a href="#" class="list__href">Startup of the day</a></li>
                     <li class="head__li"><a href="#" class="list__href">About</a></li>
                 </ul>
-                <script>
-                    function menu() {
-                        document.querySelector(".header").classList.toggle("header-active")
-                        document.querySelector(".list_menu").classList.toggle("list__menu-active")
-                        document.querySelector(".nav").classList.toggle("nav__active")
-                        document.querySelector(".nav__content").classList.toggle("nav__content-active")
-                    }
-                </script>
             </div>
+        </div>
+        <div class="mobile__menu">
+            <div class="__menu__button-content">
+                <a href="#" class="button__cart"><img src="image/icon/cart.svg" alt="img">Shop</a>
+                <a href="#" class="button_login">Login</a>
+            </div>
+            <ul class="__menu-ul">
+                <li class="__menu-list"><a href="news_viktoriia.html" class="__menu-href">News <img src="image/icon/arrow-menu.svg" alt="arrow"></a></li>
+                <li class="__menu-list"><a href="" class="__menu-href">Events <img src="image/icon/arrow-menu.svg" alt="arrow"></a></li>
+                <li class="__menu-list"><a href="" class="__menu-href">Startup of the day <img src="image/icon/arrow-menu.svg" alt="arrow"></a></li>
+                <li class="__menu-list"><a href="" class="__menu-href">About <img src="image/icon/arrow-menu.svg" alt="arrow"></a></li>
+                <li class="__menu-list"><a href="" class="__menu-href">Jobs listing <img src="image/icon/arrow-menu.svg" alt="arrow"></a></li>
+            </ul>
         </div>
         <div class="header__content">
             <div class="breadcrumb">
@@ -231,5 +241,6 @@
         </div>
     </footer>
     <script src="accordion.js"></script>
+    <script src="burger.js"></script>
 </body>
 </html>

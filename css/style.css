@@ -43,6 +43,7 @@ body {
 .nav {
   width: 100%;
   height: 8.1vh;
+  background: #131313;
   border-bottom: 1px solid #202224;
   display: flex;
   align-items: center;
@@ -69,6 +70,68 @@ body {
   background-image: url("../image/header-bg.png");
   min-height: fit-content(20em);
   padding-bottom: 2.08vw;
+}
+
+.mobile__menu {
+  position: absolute;
+  right: -100%;
+  z-index: 10;
+  transition: right 0.3s;
+  max-width: 364px;
+  width: 100%;
+  min-height: 364px;
+  height: auto;
+  background: #131313;
+  padding: 24px 40px;
+}
+.mobile__menu .__menu__button-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #202224;
+  padding-bottom: 24px;
+}
+.mobile__menu .__menu__button-content .button__cart {
+  margin-left: 0;
+  width: 138px;
+}
+.mobile__menu .__menu__button-content .button_login {
+  width: 138px;
+}
+.mobile__menu .__menu-ul {
+  list-style: none;
+}
+.mobile__menu .__menu-ul .__menu-list {
+  width: 100%;
+  border-bottom: 1px solid #202224;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+.mobile__menu .__menu-ul .__menu-list .__menu-href {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+  position: relative;
+}
+.mobile__menu .__menu-ul .__menu-list .__menu-href img {
+  opacity: 0;
+  position: absolute;
+  right: 50%;
+  transition: 0.5s;
+}
+.mobile__menu .__menu-ul .__menu-list .__menu-href:hover img {
+  opacity: 1;
+  right: 0;
+}
+
+.mobile__menu-active {
+  right: 0;
 }
 
 .content__wrap {
@@ -444,6 +507,22 @@ body {
 }
 
 .menu__icon-content {
+  display: none;
+}
+.menu__icon-content .menu__close-ico {
+  font-size: 26px;
+  display: none;
+}
+
+.menu__icon-content .__fa__close-active {
+  display: block;
+}
+
+.__cart__button-active {
+  display: none;
+}
+
+.menu__icon-content .__menu__icon-active {
   display: none;
 }
 
@@ -1455,7 +1534,11 @@ body {
   }
   .menu__icon-content {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
+  }
+  .menu__icon-content .menu__icon {
+    margin-left: 27px;
   }
 }
 @media (max-width: 768px) {
@@ -1673,9 +1756,20 @@ body {
     padding: 40px 16px;
   }
 }
+@media (max-width: 520px) {
+  .menu__icon-content .button__cart, .menu__icon-content .button_login {
+    display: none;
+  }
+}
 @media (max-width: 380px) {
   .viktoriia__menu .__menu-content {
     padding: 0;
+  }
+}
+@media (max-width: 400px) {
+  .mobile__menu {
+    max-width: none;
+    padding: 24px 16px;
   }
 }
 @media (max-width: 360px) {
