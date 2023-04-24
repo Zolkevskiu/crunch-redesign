@@ -78,7 +78,7 @@ body {
     padding-bottom: 2.08vw;
 }
 .mobile__menu {
-    position: absolute;
+    position: fixed;
     right: -100%;
     z-index: 10;
     transition: right .3s;
@@ -139,6 +139,7 @@ body {
 }
 .mobile__menu-active {
     right: 0;
+    position: absolute;
 }
 .content__wrap {
     flex: 1 0 auto;
