@@ -298,6 +298,7 @@ body {
                 h2 {
                     margin: 0;
                     padding: 20px;
+                    height: 100%;
                 }
                 .__col-footer {
                     padding: 20px;
@@ -309,14 +310,23 @@ body {
                     .__footer-likes {
                         display: flex;
                         align-items: center;
-                        font-size: 0.83vw;
+                        font-size: 1.25vw;
+                        font-family: 'Inter SemiBold';
                     }
                     .__footer-href {
-                        font-size: 1.04vw;
+                        font-size: 0.729vw;
                         line-height: 110%;
                         letter-spacing: -0.04em;
-                        color: #02B6FB;
+                        color: #B4B4B4;
                         text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        img {
+                            height: 12px;
+                            width: 12px;
+                            margin-left: 10px;
+                        }
                     }
                 }
             }
@@ -472,6 +482,7 @@ body {
         padding: 0;
         .__col-content {
             padding: 20px;
+            height: 100%;
         }
         .__col-footer {
             padding: 20px;
@@ -581,6 +592,12 @@ body {
                 }
             }
         }
+    }
+}
+.startup__of__day-content .recent__news-block {
+    margin: 2.08vw 0 2.08vw 0;
+    .__footer-likes .__likes {
+        margin: 0 2px 0 0;
     }
 }
 .head__list {
@@ -1660,6 +1677,10 @@ body {
     .dubai__startups-content .glocal__content-block .__events-block .news__data-content .__data, .dubai__startups-content .glocal__content-block .__events-block .news__data-content .__authour {
         font-size: 14px;
     }
+    .dubai__startups-content .glocal__content-block .__shop-block .events__cart .__col-footer .__footer-likes {
+        font-size: 14px;
+    }
+    .dubai__startups-content .glocal__content-block .__shop-block .events__cart .__col-footer .__footer-href {}
 }
 @media(max-width:1360px) {
     .events__cart:nth-child(2) {
@@ -1965,6 +1986,12 @@ body {
     }
     .events__content  {
         max-width: 375px;
+    }
+    .shop__content {
+        max-width: 375px;
+        .awareness__block {
+            margin: 40px 0 0 0;
+        }
     }
 } 
 .header-active {

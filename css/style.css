@@ -286,6 +286,7 @@ body {
 .dubai__startups-content .glocal__content-block .__shop-block .events__cart h2 {
   margin: 0;
   padding: 20px;
+  height: 100%;
 }
 .dubai__startups-content .glocal__content-block .__shop-block .events__cart .__col-footer {
   padding: 20px;
@@ -298,14 +299,23 @@ body {
 .dubai__startups-content .glocal__content-block .__shop-block .events__cart .__col-footer .__footer-likes {
   display: flex;
   align-items: center;
-  font-size: 0.83vw;
+  font-size: 1.25vw;
+  font-family: "Inter SemiBold";
 }
 .dubai__startups-content .glocal__content-block .__shop-block .events__cart .__col-footer .__footer-href {
-  font-size: 1.04vw;
+  font-size: 0.729vw;
   line-height: 110%;
   letter-spacing: -0.04em;
-  color: #02B6FB;
+  color: #B4B4B4;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dubai__startups-content .glocal__content-block .__shop-block .events__cart .__col-footer .__footer-href img {
+  height: 12px;
+  width: 12px;
+  margin-left: 10px;
 }
 .dubai__startups-content .glocal__content-block .__events-block h2 {
   font-size: 1.35416vw;
@@ -449,6 +459,7 @@ body {
 }
 .startup__of__day-content .recent__news-block .recent__news-row .__news-col .__col-content {
   padding: 20px;
+  height: 100%;
 }
 .startup__of__day-content .recent__news-block .recent__news-row .__news-col .__col-footer {
   padding: 20px;
@@ -549,6 +560,13 @@ body {
   letter-spacing: -0.04em;
   color: #02B6FB;
   text-decoration: none;
+}
+
+.startup__of__day-content .recent__news-block {
+  margin: 2.08vw 0 2.08vw 0;
+}
+.startup__of__day-content .recent__news-block .__footer-likes .__likes {
+  margin: 0 2px 0 0;
 }
 
 .head__list {
@@ -1610,6 +1628,9 @@ body {
   .dubai__startups-content .glocal__content-block .__events-block .news__data-content .__data, .dubai__startups-content .glocal__content-block .__events-block .news__data-content .__authour {
     font-size: 14px;
   }
+  .dubai__startups-content .glocal__content-block .__shop-block .events__cart .__col-footer .__footer-likes {
+    font-size: 14px;
+  }
 }
 @media (max-width: 1360px) {
   .events__cart:nth-child(2) {
@@ -1913,6 +1934,12 @@ body {
   }
   .events__content {
     max-width: 375px;
+  }
+  .shop__content {
+    max-width: 375px;
+  }
+  .shop__content .awareness__block {
+    margin: 40px 0 0 0;
   }
 }
 .header-active {
