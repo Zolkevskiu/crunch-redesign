@@ -1604,6 +1604,12 @@ body {
     max-width: 320px;
     width: 100%;
   }
+  .dubai__startups-content .glocal__content-block .__events-block h2 {
+    font-size: 22px;
+  }
+  .dubai__startups-content .glocal__content-block .__events-block .news__data-content .__data, .dubai__startups-content .glocal__content-block .__events-block .news__data-content .__authour {
+    font-size: 14px;
+  }
 }
 @media (max-width: 1360px) {
   .events__cart:nth-child(2) {
@@ -1651,6 +1657,9 @@ body {
   }
   .dubai__startups-content .glocal__content-block .__about-block {
     margin-top: 40px;
+  }
+  .dubai__startups-content .glocal__content-block .__events__type-dropdown {
+    margin-top: 20px;
   }
 }
 @media (max-width: 1260px) {
@@ -1902,6 +1911,9 @@ body {
   .viktoriia__menu .__menu__column-content {
     margin-top: 40px;
   }
+  .events__content {
+    max-width: 375px;
+  }
 }
 .header-active {
   min-height: 705px;
@@ -1919,8 +1931,8 @@ body {
   .header__viktoriia .header__content {
     max-width: 375px;
   }
-  .header__viktoriia .nav .nav__content {
-    max-width: 375px;
+  .header .nav .nav__content {
+    max-width: none;
   }
   .viktoriia__menu {
     padding: 40px 16px;
